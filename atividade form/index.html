@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    
+<form action="cadastro.php" method="get">
+
+<fieldset>  
+ 
+<legend> SISTEMA DE GESTÃO ACADÊMICA </legend>
+<legend> MANUTENÇÃO DE USUÁRIOS DE SISTEMA INTERNO </legend><br>
+
+Login<br>
+<input type="text"login="Login" required autofocus maxlength="999"><br>
+Senha<br>
+<input type="password" name="Senha"><br><br>
+
+Status
+<select name="status">
+<option label="Ativo"> ativo </option>
+<option label="Inativo"> inativo </option>
+</select><br><br>    
+
+Tipo
+<input type="radio" name="tipo" value="tecnico" checked> Técnico
+<input type="radio" name="tipo" value="professor"> Professor
+<input type="radio" name="tipo" value="aluno"> Aluno<br><br>
+
+Data Criação<br>
+<input type="date" name="data" min="2000-12-31" max="2023-12-31"><br><br>
+
+Perfil
+<input type="radio" name="perfil" value="convidado" checked> Convidado
+<input type="radio" name="perfil" value="administrador"> Administrador<br><br>
+
+Mensagem<br>
+<textarea name="mensagem" rows="5" cols="30" spellcheck="false"></textarea><br><br>
+
+Módulos<br>
+<input type="radio" name="modulos" value="compras" checked> Compras
+<input type="radio" name="modulos" value="biblioteca"> biblioteca
+<input type="radio" name="modulos" value="academico"> Acadêmico<br>
+<input type="radio" name="modulos" value="documentação"> documentação
+<input type="radio" name="modulos" value="recursos humanos"> Recursos Humanos<br><br>
+<button type="button"> Cadastrar </button>
+<button type="button"> Excluir </button>
+
+</fieldset>
+</form>
+
+</body>
+</html>
